@@ -85,32 +85,32 @@ export const Modules: React.FC = () => {
               Não é apenas um curso, é um mapa completo. Desenhamos a jornada de aprendizado para que você saia do zero (ou do básico) e alcance níveis profissionais de entrega em tempo recorde.
             </p>
             <div className="grid grid-cols-2 gap-4">
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-brand-500/30 transition-colors">
                     <BarChart className="text-brand-500 h-6 w-6" />
-                    <span className="font-semibold">Nível Iniciante ao Avançado</span>
+                    <span className="font-semibold text-dark-900">Nível Iniciante ao Avançado</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-brand-500/30 transition-colors">
                     <Globe className="text-brand-500 h-6 w-6" />
-                    <span className="font-semibold">Acesso Remoto 24/7</span>
+                    <span className="font-semibold text-dark-900">Acesso Remoto 24/7</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-brand-500/30 transition-colors">
                     <Lock className="text-brand-500 h-6 w-6" />
-                    <span className="font-semibold">Área de Membros Segura</span>
+                    <span className="font-semibold text-dark-900">Área de Membros Segura</span>
                 </div>
-                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
+                <div className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg border border-gray-100 hover:border-brand-500/30 transition-colors">
                     <Smartphone className="text-brand-500 h-6 w-6" />
-                    <span className="font-semibold">Assista no Celular</span>
+                    <span className="font-semibold text-dark-900">Assista no Celular</span>
                 </div>
             </div>
           </div>
 
-          <div className="grid gap-4">
+          <div className="grid gap-5">
             {modules.map((mod, idx) => (
-              <div key={idx} className="flex items-start p-6 bg-gray-50 rounded-xl hover:bg-white hover:shadow-xl hover:shadow-brand-500/10 border border-gray-100 transition-all duration-300">
-                <span className="text-4xl font-serif font-bold text-gray-200 mr-6">{mod.num}</span>
+              <div key={idx} className="group flex items-start p-6 bg-white rounded-xl border border-gray-200 shadow-md hover:shadow-2xl hover:bg-dark-900 hover:border-brand-500 transition-all duration-300 cursor-default transform hover:-translate-y-1">
+                <span className="text-4xl font-serif font-bold text-brand-500 mr-6 group-hover:scale-110 transition-transform duration-300">{mod.num}</span>
                 <div>
-                  <h4 className="text-xl font-bold text-dark-900 mb-1">{mod.title}</h4>
-                  <p className="text-gray-500 text-sm">{mod.desc}</p>
+                  <h4 className="text-xl font-bold text-dark-900 mb-2 group-hover:text-white transition-colors duration-300">{mod.title}</h4>
+                  <p className="text-gray-600 text-sm group-hover:text-gray-400 transition-colors duration-300">{mod.desc}</p>
                 </div>
               </div>
             ))}
