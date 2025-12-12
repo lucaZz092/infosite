@@ -24,6 +24,9 @@ const Footer: React.FC = () => (
       <p className="text-gray-700 text-xs mt-2">
         Este site não faz parte do site do Facebook ou Facebook Inc. Além disso, este site NÃO é endossado pelo Facebook de nenhuma maneira.
       </p>
+      <p className="text-gray-700 text-xs mt-6 pt-6 border-t border-dark-900/50">
+        Desenvolvido por <a href="https://softsolutions.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-brand-500 transition-colors font-medium">SoftSolutions</a>
+      </p>
     </div>
   </footer>
 );
